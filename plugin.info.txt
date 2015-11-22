@@ -1,0 +1,7 @@
+base   ipaddress
+author Grant Emsley
+email  grant@emsley.ca
+date   2015-11-13
+name   ipaddress plugin
+desc   Records IP addresses used in pages and creates lists of addresses.
+url    http://fake.url
