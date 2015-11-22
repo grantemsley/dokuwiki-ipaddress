@@ -2,8 +2,26 @@ ipaddress Plugin for DokuWiki
 
 Records IP addresses used in pages and creates lists of addresses.
 
-All documentation for this plugin can be found at
-http://fake.url
+
+Entering IP addresses:
+
+On any page, wrap the IP address with the <IP> tag, eg:
+<IP>192.168.0.1</IP>
+
+It can optionally accept a CIDR subnet mask and/or description, eg:
+<IP>10.0.0.0/16 Office network</IP>
+
+These entries are updated in the SQLite database each time the page is saved.
+
+Displaying IP addresses:
+
+Use the <IPList> tag to display a range of IP addresses in a table, with links to the pages that contain them, eg:
+
+<IPList 10.0.0.0 10.255.255.255 />
+
+
+
+----
 
 If you install this plugin manually, make sure it is installed in
 lib/plugins/ipaddress/ - if the folder is called different it
